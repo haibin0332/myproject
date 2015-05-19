@@ -1,0 +1,18 @@
+$git log 
+
+$git rebase -i HEAD~3(HEAD~2)
+trace back number of latest commits
+
+change pick to edit
+
+$git commit --amend
+
+change here
+
+$git rebase --continue
+
+$git push -f (force to push)
+
+
+
+
