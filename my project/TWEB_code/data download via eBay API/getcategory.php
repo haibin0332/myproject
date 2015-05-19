@@ -1,0 +1,93 @@
+<?php
+     
+	$xmlRequest=simplexml_load_file('request.xml');
+	
+    $xmlRequest = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n"
+      .utf8_encode($xmlRequest);
+	  
+
+   $headers = array (
+	  'X-EBAY-API-COMPATIBILITY-LEVEL: 765',
+      'X-EBAY-API-DEV-NAME: 3789d19d-52a5-46b8-ae41-23c6d62262f2',
+      'X-EBAY-API-APP-NAME: Macquari-0a68-4392-9462-a68ebb123699',
+      'X-EBAY-API-CERT-NAME: 8efd50ca-be2d-4c46-bf17-b847a262fd66',
+      'X-EBAY-API-CALL-NAME: GetFeedback',
+      'X-EBAY-API-SITEID: 0',
+	);
+	
+
+
+
+ 
+    $endpoint = 'https://api.ebay.com/ws/api.dll';	
+
+	$session = curl_init($endpoint); 
+	
+
+	curl_setopt ($session, CURLOPT_SSL_VERIFYHOST, 0);
+	curl_setopt ($session, CURLOPT_SSL_VERIFYPEER, 0);
+
+	curl_setopt($session, CURLOPT_HTTPHEADER, $headers); 
+	curl_setopt($session, CURLOPT_POST, 1);
+	curl_setopt($session, CURLOPT_POSTFIELDS, $xmlRequest);
+	curl_setopt ($session, CURLOPT_RETURNTRANSFER, 1);
+
+	$httpResponse = curl_exec ($session);
+	curl_close ($session);
+	$dom = new DOMDocument();
+	$dom->loadXML($httpResponse); 
+
+    $FeedbackDetails = $dom->getElementsByTagName( "FeedbackDetail" );
+	
+	    $con = mysql_connect("localhost","root","010305");
+          if (!$con)
+           {
+             die('Could not connect: ' . mysql_error());
+           }
+
+
+          $db_selected = mysql_select_db("feedback", $con);
+
+         if (!$db_selected)
+         {
+           die ("Can\'t use test_db : " . mysql_error());
+         }
+	
+	
+	
+        foreach( $FeedbackDetails as $feedbackdetail )   
+     {   
+
+
+		$FeedbackIDs = $feedbackdetail->getElementsByTagName( "FeedbackID" );
+        $FeedbackID = $FeedbackIDs->item(0)->nodeValue;
+		print_r ($FeedbackID);
+
+        $ItemTitles = $feedbackdetail->getElementsByTagName( "ItemTitle" );
+        $ItemTitle = $ItemTitles->item(0)->nodeValue;
+
+	 
+	    $ItemPrices = $feedbackdetail->getElementsByTagName( "ItemPrice" );
+        $ItemPrice = $ItemPrices->item(0)->nodeValue;
+		
+		$CommentTimes = $feedbackdetail->getElementsByTagName( "CommentTime" );
+        $CommentTime = $CommentTimes->item(0)->nodeValue;
+
+		
+	    $CommentTypes = $feedbackdetail->getElementsByTagName( "CommentType" );
+        $CommentType = $CommentTypes->item(0)->nodeValue;
+
+
+		 
+		 mysql_query("INSERT INTO test (FeedbackID, itemtitle, sellername, itemprice, time, rating) VALUES ('$FeedbackID', '$ItemTitle', 'fran24112', '$ItemPrice', '$CommentTime', '$CommentType')");	
+    
+      }  
+	  
+	  mysql_close($con);
+
+   
+          
+
+
+?>
+

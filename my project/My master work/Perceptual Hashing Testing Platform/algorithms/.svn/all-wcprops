@@ -1,0 +1,221 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/MBench/!svn/ver/54/algorithms
+END
+mbe_Radpjc.m
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/MBench/!svn/ver/51/algorithms/mbe_Radpjc.m
+END
+mbe_luomin_modifyVMWaveletWithLumimask.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/MBench/!svn/ver/2/algorithms/mbe_luomin_modifyVMWaveletWithLumimask.m
+END
+match_luomin_modifyVMWaveletWithLumimask_Euclidean.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/MBench/!svn/ver/2/algorithms/match_luomin_modifyVMWaveletWithLumimask_Euclidean.m
+END
+mbe_Wumin_flyMellin.m
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/MBench/!svn/ver/48/algorithms/mbe_Wumin_flyMellin.m
+END
+mbe_zh_rdd.m
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/MBench/!svn/ver/54/algorithms/mbe_zh_rdd.m
+END
+mbe_Fridrich_bitsextraction.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/MBench/!svn/ver/50/algorithms/mbe_Fridrich_bitsextraction.m
+END
+mbe_Fridrich_HVSOnly.m
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/MBench/!svn/ver/2/algorithms/mbe_Fridrich_HVSOnly.m
+END
+mbe_Fridrich_bitsextraction_HVSWeighted.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/MBench/!svn/ver/2/algorithms/mbe_Fridrich_bitsextraction_HVSWeighted.m
+END
+match_luomin_modifyVMWaveletWithLumimask_Weighted.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/MBench/!svn/ver/2/algorithms/match_luomin_modifyVMWaveletWithLumimask_Weighted.m
+END
+match_WatsonAsPH.m
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/MBench/!svn/ver/2/algorithms/match_WatsonAsPH.m
+END
+match_zh_descendingDimensionOfWatson.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/MBench/!svn/ver/2/algorithms/match_zh_descendingDimensionOfWatson.m
+END
+match_zh_rdd_method3.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/MBench/!svn/ver/48/algorithms/match_zh_rdd_method3.m
+END
+mbe_WatsonAsPH.m
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/MBench/!svn/ver/2/algorithms/mbe_WatsonAsPH.m
+END
+mbe_li_LVQHash.m
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/MBench/!svn/ver/48/algorithms/mbe_li_LVQHash.m
+END
+mbe_WangShuoZhong_watsonBased.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/MBench/!svn/ver/2/algorithms/mbe_WangShuoZhong_watsonBased.m
+END
+mbe_WangShuoZhong_watsonBased_WithoutM.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/MBench/!svn/ver/2/algorithms/mbe_WangShuoZhong_watsonBased_WithoutM.m
+END
+match_zh_rdd_method8.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/MBench/!svn/ver/51/algorithms/match_zh_rdd_method8.m
+END
+mbe_zh_descendingDimensionOfWatson.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/MBench/!svn/ver/2/algorithms/mbe_zh_descendingDimensionOfWatson.m
+END
+match_zh_tamperdetect1.m
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/MBench/!svn/ver/51/algorithms/match_zh_tamperdetect1.m
+END
+mbe_Fridrich_HVSWeighted_reciprocal.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/MBench/!svn/ver/2/algorithms/mbe_Fridrich_HVSWeighted_reciprocal.m
+END
+mbe_VishalMonga_wavelet.m
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/MBench/!svn/ver/14/algorithms/mbe_VishalMonga_wavelet.m
+END
+match_VishalMonga.m
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/MBench/!svn/ver/2/algorithms/match_VishalMonga.m
+END
+mbe_zh_tamperdetect1.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/MBench/!svn/ver/51/algorithms/mbe_zh_tamperdetect1.m
+END
+match_Fridrich_bitsextraction.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/MBench/!svn/ver/2/algorithms/match_Fridrich_bitsextraction.m
+END
+mbe_yanan.m
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/MBench/!svn/ver/2/algorithms/mbe_yanan.m
+END
+mbe_mihcak_iterative.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/MBench/!svn/ver/51/algorithms/mbe_mihcak_iterative.m
+END
+mbe_bian.m
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/MBench/!svn/ver/9/algorithms/mbe_bian.m
+END
+001n.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/MBench/!svn/ver/2/algorithms/001n.bmp
+END
+mbe_VishalMonga_SVD.m
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/MBench/!svn/ver/43/algorithms/mbe_VishalMonga_SVD.m
+END
+mbe_haibin_minkowski.m
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/MBench/!svn/ver/2/algorithms/mbe_haibin_minkowski.m
+END
+mbe_WangShuoZhong_watsonBased_corrected.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/MBench/!svn/ver/2/algorithms/mbe_WangShuoZhong_watsonBased_corrected.m
+END
+match_VishalMonga_fp.m
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/MBench/!svn/ver/2/algorithms/match_VishalMonga_fp.m
+END
+match_luomin_modifyVMWaveletWithLumimask_CountIntersection.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/MBench/!svn/ver/2/algorithms/match_luomin_modifyVMWaveletWithLumimask_CountIntersection.m
+END
+mbe_VishalMonga_FP.m
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/MBench/!svn/ver/44/algorithms/mbe_VishalMonga_FP.m
+END
+mbe_basedHVS.m
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/MBench/!svn/ver/2/algorithms/mbe_basedHVS.m
+END
+match_yanan.m
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/MBench/!svn/ver/2/algorithms/match_yanan.m
+END

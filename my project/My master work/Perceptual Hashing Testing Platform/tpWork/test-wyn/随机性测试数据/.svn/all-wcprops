@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/MBench/!svn/ver/26/tpWork/test-wyn/%E9%9A%8F%E6%9C%BA%E6%80%A7%E6%B5%8B%E8%AF%95%E6%95%B0%E6%8D%AE
+END
+data_normal.txt
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/MBench/!svn/ver/2/tpWork/test-wyn/%E9%9A%8F%E6%9C%BA%E6%80%A7%E6%B5%8B%E8%AF%95%E6%95%B0%E6%8D%AE/data_normal.txt
+END
+data_normal_mean.txt
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/MBench/!svn/ver/2/tpWork/test-wyn/%E9%9A%8F%E6%9C%BA%E6%80%A7%E6%B5%8B%E8%AF%95%E6%95%B0%E6%8D%AE/data_normal_mean.txt
+END
+extractedData.m
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/MBench/!svn/ver/2/tpWork/test-wyn/%E9%9A%8F%E6%9C%BA%E6%80%A7%E6%B5%8B%E8%AF%95%E6%95%B0%E6%8D%AE/extractedData.m
+END
+data_keyChanged.txt
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/MBench/!svn/ver/2/tpWork/test-wyn/%E9%9A%8F%E6%9C%BA%E6%80%A7%E6%B5%8B%E8%AF%95%E6%95%B0%E6%8D%AE/data_keyChanged.txt
+END
+data_withoutHVS.txt
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/MBench/!svn/ver/2/tpWork/test-wyn/%E9%9A%8F%E6%9C%BA%E6%80%A7%E6%B5%8B%E8%AF%95%E6%95%B0%E6%8D%AE/data_withoutHVS.txt
+END
+data_withoutP1.txt
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/MBench/!svn/ver/2/tpWork/test-wyn/%E9%9A%8F%E6%9C%BA%E6%80%A7%E6%B5%8B%E8%AF%95%E6%95%B0%E6%8D%AE/data_withoutP1.txt
+END
+data_withoutP2.txt
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/MBench/!svn/ver/2/tpWork/test-wyn/%E9%9A%8F%E6%9C%BA%E6%80%A7%E6%B5%8B%E8%AF%95%E6%95%B0%E6%8D%AE/data_withoutP2.txt
+END

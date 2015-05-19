@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/MBench/!svn/ver/25/QaMethods
+END
+Qa_NAE.m
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/MBench/!svn/ver/2/QaMethods/Qa_NAE.m
+END
+Qa_PQS.m
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/MBench/!svn/ver/2/QaMethods/Qa_PQS.m
+END
+Qa_AvgDiff.m
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/MBench/!svn/ver/2/QaMethods/Qa_AvgDiff.m
+END
+Qa_NK.m
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/MBench/!svn/ver/2/QaMethods/Qa_NK.m
+END
+Qa_SSIM.m
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/MBench/!svn/ver/2/QaMethods/Qa_SSIM.m
+END
+Qa_watson.m
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/MBench/!svn/ver/2/QaMethods/Qa_watson.m
+END
+Qa_MaxDiff.m
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/MBench/!svn/ver/2/QaMethods/Qa_MaxDiff.m
+END
+pqs.m
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/MBench/!svn/ver/2/QaMethods/pqs.m
+END
+Qa_DCTune.m
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/MBench/!svn/ver/2/QaMethods/Qa_DCTune.m
+END
+Qa_PSNR.m
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/MBench/!svn/ver/2/QaMethods/Qa_PSNR.m
+END
+Qa_MSE.m
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/MBench/!svn/ver/2/QaMethods/Qa_MSE.m
+END
+Qa_StruContent.m
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/MBench/!svn/ver/2/QaMethods/Qa_StruContent.m
+END
+Qa_WSNR.m
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/MBench/!svn/ver/2/QaMethods/Qa_WSNR.m
+END
+getInputs_allQaMethods.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/MBench/!svn/ver/2/QaMethods/getInputs_allQaMethods.m
+END
+Qa_LMSE.m
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/MBench/!svn/ver/2/QaMethods/Qa_LMSE.m
+END

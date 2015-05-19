@@ -1,0 +1,24 @@
+
+
+
+
+<GetFeedbackRequest xmlns="urn:ebay:apis:eBLBaseComponents">
+<RequesterCredentials>
+<eBayAuthToken>AgAAAA**AQAAAA**aAAAAA**1tNrTw**nY+sHZ2PrBmdj6wVnY+sEZ2PrA2dj6AFkISjDZmApw6dj6x9nY+seQ**rm0BAA**AAMAAA**tsMZCskzHX5mBMb4iAO/O2ctAuA1WfJgPQIW4bZ3MNbpcsD5cfHZYZImaRkTrw3NunFwxrcuDHbnhKEuUgGk6O4/AocP1vxKcTgV6NTdrGVw3St9SVvA1C4aeVB4IgAT+5Cl1bt6xkpZBTVOnGYjJs0Tmgbu7/ZlePLNxE8rhL2wmE1IFjdxD4JrNXtK3wJvDZSnwQkzhjFItTdTgNKj0H+/11IexDbi13xmoSoGJzmKF//QPNKqh0ScaHIIG6kobA+zZ+VbzgBJKJg6QdY5GNtS+Orl/XNeol6RMI+O/CQmJNb5UhC9Rucc8egaFdMaL40DQCznBQj+9famxN39iZsdddYPLj+33xy+FhdyiPui99hACu6CCJm6Alm13GIgPg3LdInmmlwTUr1FjoYtEfnHYVUe9ZJ30f/zZf4irhx/N3pJrzISO0VvCe5AhflDmOU+HZ/jyjwFrqxO+08dnBF/jPtRTuhgLwwLvab+hsQgIt4PX7RG2l5QZW5C7ST8BZnJ7asIq1Vmj9zO5ZBHREH7cASWpcGqQuEFetg81jzMnWBk3hFuBCAm/SnNQqd5aHjVlXWkH9AUev9BETtOXYTewqQlRyneHPrhEE1D5WAI9rTvn+TOtvzvf4iYZRCQ3FONtprLroxrFotS7uP+viizn84Brum045JD9AA+V3r7N7VRlgqMnUKXdnNFN9PSrIc+ge5HnGaOHqBFagr6bWFsrhP4H+hfHek2wfDHx6Oa+FU39Q/GBVjcMbpY+d7n</eBayAuthToken>
+</RequesterCredentials>
+<UserID>fran24112</UserID>
+<Pagination>
+<EntriesPerPage>200</EntriesPerPage>
+<PageNumber>1</PageNumber>
+</Pagination>  
+<CommentType>CustomCode</CommentType>
+<FeedbackType>CustomCode</FeedbackType>
+<DetailLevel>ReturnAll</DetailLevel>
+  
+<Version>765</Version>
+<WarningLevel>Low</WarningLevel>
+</GetFeedbackRequest>
+
+
+
+

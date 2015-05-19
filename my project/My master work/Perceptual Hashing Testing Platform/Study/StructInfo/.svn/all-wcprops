@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/MBench/!svn/ver/54/Study/StructInfo
+END
+multiTimesDiff.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/MBench/!svn/ver/54/Study/StructInfo/multiTimesDiff.m
+END
+randomBlockInfo.m
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/MBench/!svn/ver/54/Study/StructInfo/randomBlockInfo.m
+END
+ssimLuminance.m
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/MBench/!svn/ver/54/Study/StructInfo/ssimLuminance.m
+END
+regularBlockInfo.m
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/MBench/!svn/ver/54/Study/StructInfo/regularBlockInfo.m
+END
+ssimContrast.m
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/MBench/!svn/ver/54/Study/StructInfo/ssimContrast.m
+END
+struct_sysx.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/MBench/!svn/ver/54/Study/StructInfo/struct_sysx.m
+END
+match_SSIM_struct.m
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/MBench/!svn/ver/54/Study/StructInfo/match_SSIM_struct.m
+END
+ssimStructure.m
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/MBench/!svn/ver/54/Study/StructInfo/ssimStructure.m
+END
+struct_syeh.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/MBench/!svn/ver/54/Study/StructInfo/struct_syeh.m
+END
+match_SSIM_lumi.m
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/MBench/!svn/ver/54/Study/StructInfo/match_SSIM_lumi.m
+END
+readme_StructInfo.m
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/MBench/!svn/ver/54/Study/StructInfo/readme_StructInfo.m
+END
+randpermDiff.m
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/MBench/!svn/ver/54/Study/StructInfo/randpermDiff.m
+END
+match_SSIM_sumlumi.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/MBench/!svn/ver/54/Study/StructInfo/match_SSIM_sumlumi.m
+END
+tP_StructInfo.m
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/MBench/!svn/ver/54/Study/StructInfo/tP_StructInfo.m
+END
