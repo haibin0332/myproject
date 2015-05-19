@@ -83,7 +83,9 @@ $git add . (the whole files)
 
 "git add --ignore-removal" (add new files and modified files) 
 
+
 $git commit (-m "explanations")
+
 
 $git push 
 
