@@ -1,0 +1,121 @@
+%{
+针对提取的hash值执行 intraclass 测试，
+对同一幅图像 计算原图与受攻击之后的图像之间的 距离
+本函数关注 intraclass test 的逻辑，包括： 
+	1、匹配算法
+	2、测试结果保存
+	3、针对那些图像、算法、攻击执行测试
+
+input:
+	intraClassTestPlan
+		intraClassTestPlan = struct('workdir',{},'extractedImages',{},'customedOutName',{},...
+								'algfun',{},'matchfun',{},'params',{},'normalizedDistRange',{},'includeAttacks',{},'includeImages',{});
+			workdir
+				保存 extractedImages 的路径，这个路径可以视作针对某一个算法进行测试的工作路径，今后产生的结果都保存在这里
+			extractedImages
+				mat 文件名， 比如：“extractBy-mbe_yanan”
+			customedOutName
+				不同测试目的可能会产生多个不同的 intraClassTest 结构，这个名称用于标识这种不同。
+				如果没有特殊要求，这个参数可以为空。因为 过程会自动产生一个 名称。
+			algfun
+				算法的函数，比如： mbe_yanan 
+			matchfun
+				函数指针： @match_yanan 如果是最普通的汉明距，那么输入为空，相应的DistRange为【0，1】
+			params
+				匹配函数可能需要使用的参数,
+                为了适应各种不同参数类型的需要， params 应该是一个cell数组，在匹配函数中进行cell的处理。目前还没有用到这方面的功能
+			normalizedDistRange
+				表示matchfun的返回是否经过了normalize。如果为空，表示没有经过Normalize,如果不为空，应该指出大小范围，如： [0,1]
+                这个参数的最初设计应该是为了保证画图的规范，但是后来有了对测试数据的归一化方法，这个好像没什么用了。具体的忘了。
+			includeAttacks
+				准备处理的攻击方法的列表
+			includeImages
+				准备处理的图像的列表
+output:
+	savemat: 产生的输出，应该是保存相关信息的mat文件
+调用：
+	getInputs_MBT_intraclasstest
+	savemat = mbt_intraclasstest(intraClassTestPlan);
+%}
+ 
+function [savemat] = mbt_intraclasstest(intraClassTestPlan)
+%% test input
+  getInputs_mbt_intraclasstest
+
+%% get inputs
+workdir = intraClassTestPlan(1).workdir;
+extractedImages = intraClassTestPlan(1).extractedImages;
+customedOutName = intraClassTestPlan(1).customedOutName;
+matchfun = intraClassTestPlan(1).matchfun;
+params = intraClassTestPlan(1).params;
+includeAttacks = intraClassTestPlan(1).includeAttacks;
+includeImages = intraClassTestPlan(1).includeImages;
+
+hashmatfile = fullfile(workdir,extractedImages);
+load(hashmatfile);
+
+%% Preallocation
+intraDistance = struct('attMethod',{},'attStrength',{},'Distances',{});
+intraClassTest = struct('intraClassTestPlan',{},...
+						'intraDistance',struct('attMethod',{},'attStrength',{},'Distances',{}));
+% 针对每种攻击建立一个矩阵，矩阵的行是所有图像，矩阵的列是每种攻击强度之下计算得到的Distance。
+[imBe, indexInclude, indexImages] = intersect(includeImages, {extractedImages.imOriginal});
+
+intraClassTest = setfield(intraClassTest,{1},'intraClassTestPlan',intraClassTestPlan);
+
+for r = sort(indexImages)
+	hashAttacked = extractedImages(r).hashAttacked;
+	[attBe, indexInclude, indexAttacks] = intersect(includeAttacks, {hashAttacked.attMethod});
+	
+	cCounter = 0;
+	for c = sort(indexAttacks)
+		cCounter = cCounter + 1;
+		intraDistance = setfield(intraDistance,{cCounter},'attMethod',hashAttacked(c).attMethod);
+		intraDistance = setfield(intraDistance,{cCounter},'attStrength',hashAttacked(c).attStrength);	
+		Distances = zeros(length(imBe),length(hashAttacked(c).attStrength)); % 每行对应一个图像，每列对应一个攻击强度。
+		intraDistance = setfield(intraDistance,{cCounter},'Distances',Distances);
+	end
+	intraClassTest = setfield(intraClassTest,{1},'intraDistance',intraDistance);
+	break;
+end
+%% Calculate the Distance between two hash values
+rCounter = 0;
+for r = sort(indexImages)
+	rCounter = rCounter + 1;
+	hashAttacked = extractedImages(r).hashAttacked;
+	[attBe, indexInclude, indexAttacks] = intersect(includeAttacks, {hashAttacked.attMethod});
+	
+	hashOriginal = extractedImages(r).hashOriginal;
+	hashAttacked = extractedImages(r).hashAttacked;
+	
+	cCounter = 0;
+	for c = sort(indexAttacks)
+		cCounter = cCounter + 1;
+		for k = 1:length(hashAttacked(c).attStrength)
+			hashVector = cell2mat(hashAttacked(c).hashVector(k));
+			Distance = findDistance(hashOriginal,hashVector,matchfun,params);
+			intraClassTest.intraDistance(cCounter).Distances(rCounter,k) = Distance; % 每行对应一个图像，每列对应一个攻击强度。
+		end
+	end
+	r  % 打印进度，以免着急
+end
+%% save outfile
+if isempty(customedOutName)
+	savemat = fullfile(workdir,['intraTest-',intraClassTestPlan(1).extractedImages]);
+else
+	savemat = fullfile(workdir,['intraTest-',intraClassTestPlan(1).extractedImages,'_',customedOutName]);
+end
+if exist(savemat,'file') ~= 0
+	movefile(savemat, [savemat, '.bak']);
+end 
+save(savemat,'intraClassTest');
+end % end for function
+
+%% find the distance between two hash values
+function [NormalizedDistance] = findDistance(hashReference,hashTest,matchfun,params)
+	if isempty(matchfun) % 对于绝大部分情况，汉民距就是这样的
+		NormalizedDistance = sum(abs(hashReference - hashTest))/length(hashTest);
+	else
+		NormalizedDistance = matchfun(hashReference,hashTest,params);
+	end
+end

@@ -1,0 +1,99 @@
+download git
+git-scm.com/downloads (Git Bash)
+
+
+Git Bash (same to linux)
+
+1)set up git
+
+$git config --global user.name "haibin0332(e.g.)" 
+
+$git config --global user.email "email address(e.g.)"
+
+
+$cd Desktop (the route to copy and download the files)
+
+$ls 
+
+$clear
+
+2) create repositories
+https://github.com/haibin0332 (create repositories)
+
+get clone the repository (clone uses for copy and download the link)
+
+$git clone (https://github.com/haibin0332/myproject.git)(right side->edit->paste) 
+
+$cd myproject (coming into Desktop/myproject)
+
+$ls (README.md)
+$vim README.md (or open with notepad++/)
+
+import comments:
+
+$git status
+
+tell the changes of the files
+
+then, after we know the changes, we can use the following comments
+
+$git add README.md (not on the website yet, this is the intermediate step between local and pushing online)
+
+
+$git commit (get ready step finilizing to push on the repository not exactlly real pushing)
+($git commit -help)
+($git commit -m (this commit a message on your changes) e.g. $git commit -m "updated readme file")
+
+$git log
+record what happen
+
+$git status
+Your branch is ahead of 'origin/master'by 1 commit
+
+If you do not have remote origin (current location) (necessary step if you without clone)
+$git remote add origin (https://github.com/haibin0332/myproject.git)
+fatal:remote origin already exists.
+
+###########################################
+the most important step
+
+$git push -u origin master
+
+
+username/password
+
+add---commit---push
+
+e.g. 
+
+$touch (test.txt) create a new file (changes in local files)
+
+$ls
+
+add---commit---push
+
+
+$git add file
+$git add . (the whole files)
+"git add -A" stages all   (add new files, modified files, deleted files)
+
+"git add ."  stages new and modified, without deleted (add new files, modified and deleted files)
+
+"git add -u"  stages modified and deleted, without new (add modified files and deleted files)
+
+"git add --ignore-removal" (add new files and modified files) 
+
+$git commit (-m "explanations")
+
+$git push 
+
+
+
+
+
+
+
+
+
+
+

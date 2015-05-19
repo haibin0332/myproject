@@ -1,0 +1,58 @@
+<html>
+<body>
+<?php
+     
+	 if(isset($_POST['submit'])){
+	 
+	 $xmlRequest = $_POST['xml'];
+     echo $xmlRequest;
+     
+     $xmlRequest = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n"
+      .utf8_encode($xmlRequest);
+
+   
+   
+   $headers = array (
+	  'X-EBAY-API-COMPATIBILITY-LEVEL: 735',
+      'X-EBAY-API-DEV-NAME: 05b10a31-8a1c-4d12-a1f9-c5c80ccb1a4c',
+      'X-EBAY-API-APP-NAME: haibinzh-ddfc-43d2-afe7-2e7e1fce2083',
+      'X-EBAY-API-CERT-NAME: aab2fea8-b1f7-4de1-a723-6cf096434d9a',
+      'X-EBAY-API-CALL-NAME: GetProducts',
+      'X-EBAY-API-SITEID: 0',
+	);
+
+
+ 
+    $endpoint = 'https://api.sandbox.ebay.com/ws/api.dll';	
+
+	$session = curl_init($endpoint); 
+	
+
+	curl_setopt ($session, CURLOPT_SSL_VERIFYHOST, 0);
+	curl_setopt ($session, CURLOPT_SSL_VERIFYPEER, 0);
+
+	curl_setopt($session, CURLOPT_HTTPHEADER, $headers); 
+	curl_setopt($session, CURLOPT_POST, 1);
+	curl_setopt($session, CURLOPT_POSTFIELDS, $xmlRequest);
+	curl_setopt ($session, CURLOPT_RETURNTRANSFER, 1);
+
+	$httpResponse = curl_exec ($session);
+	curl_close ($session);
+	
+      echo "<pre>";
+      echo htmlentities($httpResponse);
+      echo "</pre><hr/>";
+
+
+}
+
+?>
+
+ Enter your XML here: <br/>
+<form method="POST">
+   <textarea name="xml" cols="60" rows="20"></textarea>
+   <br/>
+   <input type="submit" name="submit" />
+</form>
+</body>
+</html>

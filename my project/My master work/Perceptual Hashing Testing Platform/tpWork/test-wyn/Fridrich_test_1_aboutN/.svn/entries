@@ -1,0 +1,80 @@
+8
+
+dir
+54
+https://Zhanghui-local:8443/svn/MBench/tpWork/test-wyn/Fridrich_test_1_aboutN
+https://Zhanghui-local:8443/svn/MBench
+
+
+
+2008-10-29T12:18:14.485877Z
+26
+zhlocal
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+dc028eb8-e8eb-1a4e-88f1-3f248b8d0d8a
+
+testN-Gaussian(v).fig
+file
+
+
+
+
+2008-12-21T13:33:34.750000Z
+a22793147dcca4eeee859282596232af
+2008-10-22T06:55:39.328125Z
+2
+zhlocal
+has-props
+
+test 1.fig
+file
+
+
+
+
+2008-12-21T13:33:34.765625Z
+2cdcdaafa0d9cd78d6e95d4d29900fd9
+2008-10-22T06:55:39.328125Z
+2
+zhlocal
+has-props
+
+testN-Gaussian(v).bmp
+file
+
+
+
+
+2008-12-21T13:33:34.796875Z
+79ca768d7d1628ec8d6d7aacbd2e0ddc
+2008-10-22T06:55:39.328125Z
+2
+zhlocal
+has-props
+
+test 1.bmp
+file
+
+
+
+
+2008-12-21T13:33:34.828125Z
+31099c8fe8f46cdff1f07e8adb54b3f1
+2008-10-22T06:55:39.328125Z
+2
+zhlocal
+has-props
+
