@@ -1,6 +1,5 @@
 #myproject
 
-To show my previous projects
 
 ICSOC code is basically using MF (matrix factorization) to find trustworthy link within soical network.
 
