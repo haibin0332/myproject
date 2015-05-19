@@ -70,8 +70,6 @@ $touch (test.txt) create a new file (changes in local files)
 
 $ls
 
-add---commit---push
-
 
 $git add file
 $git add . (the whole files)
