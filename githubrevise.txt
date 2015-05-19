@@ -14,5 +14,3 @@ $git rebase --continue
 $git push -f (force to push)
 
 
-
-
