@@ -20,7 +20,7 @@ $clear
 2) create repositories
 https://github.com/haibin0332 (create repositories)
 
-get clone the repository (clone uses for copy and download the link)
+git clone the repository (clone uses for copy and download the link)
 
 $git clone (https://github.com/haibin0332/myproject.git)(right side->edit->paste) 
 
