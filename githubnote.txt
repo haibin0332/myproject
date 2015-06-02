@@ -73,12 +73,11 @@ $ls
 
 $git add file
 $git add . (the whole files)
+
+the following commits are quite useful
 "git add -A" stages all   (add new files, modified files, deleted files)
-
 "git add ."  stages new and modified, without deleted (add new files, modified and deleted files)
-
 "git add -u"  stages modified and deleted, without new (add modified files and deleted files)
-
 "git add --ignore-removal" (add new files and modified files) 
 
 
